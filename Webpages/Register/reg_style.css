@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+}
+.container{
+    background-image: url("images/bgimage.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    height: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Open Sans", sans-serif;
+    font-variation-settings: "wdth" 75;
+    font-weight: 600;
+    height: 70px;
+}
+.logo{
+    margin-top: auto;
+}
+.logo img{
+    width: 60px;
+}
+.nav_links{
+    display: flex;
+    width: 650px;
+    justify-content: space-around;
+    
+}
+.nav_links ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.nav_links li{
+    margin:auto;
+    justify-content: space-between;
+}
+.nav_links a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #00000080;
+    font-size: 18px;
+}
+.signin_up{
+    display: flex;
+    width: 350px;
+}
+.signin_up a{
+    margin: auto;
+    text-decoration: none;
+    padding: 7px 40px 7px 40px;
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: 18px;
+}
+.signin{
+    background-color: white;
+    color: #A60000CC;
+}
+.signin:hover{
+    background: black;
+    color: white;
+}
+.signup{
+    background: linear-gradient(#D22828, #901919);
+    color: white;
+}
+.signup:hover{
+    background: black;
+    color: white;
+}
+.form{
+    justify-content: center;
+    display: flex;
+}
+form{
+    border: 5px solid white;
+    margin-top: 50px;
+    width: 700px;
+    background-color: #FFFFFFCC;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    color: #B00404;
+    font-style: normal;
+    font-family: "Open Sans", sans-serif;
+    font-variation-settings: "wdth" 100;
+    font-weight: 900;
+}
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    color: #B00404;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 26px;
+    word-spacing: 4px;
+}
+.inputs{
+    display: block;
+    justify-content: center;
+}
+.input_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+.input_box .input_field{
+    width: 48%;
+}
+.input_box2{
+    display: block;
+    margin: 20px 50px;
+}
+input{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 15px;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+input::placeholder{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+.input_box2 .input_field{
+    margin-bottom: 20px;
+}
+.input_field{
+    background-color: #28282873;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+}
+.input_field img{
+    margin-left: 10px;
+    width: 25px;
+}
+#pass_img{
+    margin-right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+#pass_img2{
+    margin-right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+#messages{
+    color: #921B1B;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: -5px;
+    margin-bottom: 2px;
+}
+#messages img{
+    width: 20px;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+.register_b{
+    display: block;
+    margin: -15px 50px 0px 50px;
+}
+.register_b input{
+    background: linear-gradient(#921B1B, #832121);
+    margin: 0;
+    font-size: 23px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 700;
+    border-radius: 15px;
+    height: 50px;
+}
+.register_b input:hover{
+    background: black;
+}
+.consent{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 50px;
+}
+input[type="checkbox"]{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #00000054;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked{
+    background-color: #B00404;
+}
+input[type="checkbox"]:checked:before{
+    border-color: white;
+}
+input[type="checkbox"]:hover{
+    background-color: #B00404;
+}
+.text{
+    font-size: 16px;
+    width: 450px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #412727;
+    width: 500px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.text a{
+    color: #B01313;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.socials a{
+    text-decoration: none;
+}
+.socials img{
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.soc{
+    border: 3px solid #B00404;
+    margin: 5px;
+    border-radius: 50px;
+}
+.soc:hover{
+    background: #B00404;
+}
+@media only screen and (max-width:780px){
+    form{
+        width: 450px;
+    }
+    h1{
+        font-size: 27px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    input{
+        margin-left: 5px;
+        font-size: 14px;
+    }
+    input::placeholder{
+        font-size: 15px;
+    }
+    .input_field{
+        height: 35px;
+    }
+    .input_field img{
+        width: 20px;
+    }
+    #pass_img{
+        width: 25px;
+    }
+    #pass_img2{
+        width: 25px;
+    }
+    .register_b input{
+        font-size: 18px;
+        height: 45px;
+    }
+    input[type="checkbox"]{
+        width: 25px;
+        height: 25px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .socials img{
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+    }
+}

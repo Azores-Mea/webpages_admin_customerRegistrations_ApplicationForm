@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Register</title>
+        <link rel="stylesheet" href="reg_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75,100,300..800;1,75,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="logo"><img src="images/reg_logo.svg"></div>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="news.asp">HOME</a></li>
+                        <li><a href="contact.asp">PRODUCTS</a></li>
+                        <li><a href="about.asp">PROMOS</a></li>
+                        <li><a href="about.asp">NEWS & REVIEWS</a></li>
+                    </ul>
+                </div>
+                <div class="signin_up">
+                    <a href="about.asp" class="signin">SIGN IN</a>
+                    <a href="about.asp" class="signup">SIGN UP</a>
+                </div>
+            </div>
+            <div class="form">
+                <form onsubmit="return passverify()">
+                    <h1>Registration for an Account</h1>
+                    <h2>Get the most out of your Mitsubishi experience.</h4>
+
+                    <div class="inputs">
+                        <div class="input_box">
+                            <div class="input_field">
+                                <img src="images/NameIcon.svg">
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="input_field">
+                                <img src="images/NameIcon.svg">
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="input_box2">
+                            <div class="input_field">
+                                <img src="images/email.svg">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="input_field">
+                                <img src="images/password.svg">
+                                <input type="password" placeholder="Password" class="password" id="password" required>
+                                <img src="images/closed_eye.svg" id="pass_img">
+                            </div>
+                            <div class="input_field">
+                                <img src="images/password.svg">
+                                <input type="password" placeholder="Confirm Password" class="confirm" id="confirm" required>
+                                <img src="images/closed_eye.svg" id="pass_img2">
+                            </div>
+                            <span id="messages"></span>
+                        </div>
+                    </div>
+
+                    <div class="register_b">
+                        <input type="submit" value="Register" style="cursor:pointer;" class="button">
+                    </div>
+
+                    <div class="consent">
+                        <div class="checkbox"><input type="checkbox" required></div>
+                        
+                        <div class="text">
+                            <p>I consent to the processing of my data provided above for the registration to MitsubishiManila</p>
+                            <br>
+                            <p>I have read and understood the <a href="">MitsubishiManila Terms and Condition</a> and <a href="">Privacy Regulations</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="socials">
+                            <a href="" class="soc"><img src="images/instagram.svg"></a>
+                            <a href="" class="soc"><img src="images/twitter.svg"></a>
+                            <a href="" class="soc"><img src="images/facebook.svg"></a>
+                            <a href="" class="soc"><img src="images/gmail.svg"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            let eyeicon2 = document.getElementById("pass_img2");
+            let password2 = document.getElementById("confirm");
+
+            eyeicon2.onclick = function(){
+                if(password2.type == "password"){
+                    password2.type = "text";
+                    eyeicon2.src = "images/open_eye.svg";
+                }else{
+                    password2.type = "password";
+                    eyeicon2.src = "images/closed_eye.svg";
+                }
+            }
+        </script>
+        <script>
+            let eyeicon = document.getElementById("pass_img");
+            let password = document.getElementById("password");
+
+            eyeicon.onclick = function(){
+                if(password.type == "password"){
+                    password.type = "text";
+                    eyeicon.src = "images/open_eye.svg";
+                }else{
+                    password.type = "password";
+                    eyeicon.src = "images/closed_eye.svg";
+                }
+            }
+        </script>
+        <script>
+            function passverify(){
+                var a = document.getElementById("password").value;
+                var b = document.getElementById("confirm").value;
+
+                if(a!=b){
+                    document.getElementById("messages").innerHTML='<span id="messages"><img src="images/warning.svg">Passwords do not match! Please try again.</span>';
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

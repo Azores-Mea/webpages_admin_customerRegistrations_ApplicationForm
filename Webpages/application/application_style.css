@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+}
+.container{
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.header{
+    margin-top: 2rem;
+    background-color: #252222;
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    margin-bottom: 2rem;
+}
+.header p{
+    color: white;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+}
+.header img{
+    height: 6rem;
+    margin-top: 1rem;
+}
+.banks{
+    border: 3px solid #00000080;
+    border-radius: 30px;
+    width: 65%;
+    margin: auto;
+    background-color: #FCFCFC;
+}
+.unit{
+    border: 3px solid #00000080;
+    border-radius: 50px;
+    border-style: none none solid none;
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.u_label{
+    width: 30%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #AC0000;
+    border: 1px solid black;
+    float: left;
+}
+.u_label p{
+    font-size: 2.1em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+.u_name{
+    width: 40%;
+}
+.u_name p{
+    font-size: 23px;
+    margin-top: .7rem;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.u_change{
+    width: 25%;
+}
+.u_change button{
+    float: right;
+    border: none;
+    background: none;
+    color: #AC0000;
+    font-size: 23px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.choosebank{
+    width: 95%;
+    margin: auto;
+}
+.choosebank p{
+    border-bottom: 3px solid #AC0000;
+    width: 100%;
+    border-image: linear-gradient(to right, #AC0000 9%, transparent 9%) 100% 1;
+    margin-top: .5rem;
+    font-size: 20px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+.choosebank img{
+    width: 15vw;
+    height: 8vw;
+}
+.bankchoice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.bankchoice label{
+    margin: 10px;
+}
+#topbank{
+    margin-bottom: 3rem;
+}
+.bankchoice input{
+    display: none;
+}
+
+#bank-1:checked ~ .bank-1,
+#bank-2:checked ~ .bank-2,
+#bank-3:checked ~ .bank-3,
+#bank-4:checked ~ .bank-4,
+#bank-5:checked ~ .bank-5,
+#bank-6:checked ~ .bank-6{
+    border: 2px solid #AC0000;
+    background-color: #AC0000;
+}
+.application_form{
+    border: 3px solid #00000080;
+    width: 65%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: #FCFCFC;
+}
+.consent{
+    border: 2px solid #00000080;
+    border-style: none none solid none;
+    height: 210px;
+    text-align: center;
+}
+.consent h1{
+    color: #AC0000;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.consent p{
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+.check{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.checkbox-field{
+    opacity: 0;
+}
+.checkbox-label{
+    position: relative;
+    padding-left: 40px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    cursor: pointer;
+}
+.checkbox-label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.checkbox-label:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    background: #AC0000;
+    border: 2px solid black;
+}
+.checkbox-field:not(:checked) + .checkbox-label::after{
+    opacity: 0;
+}
+header{
+    color: #AC0000;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+.detailspersonal{
+    width: 90%;
+    margin: auto;
+}
+.title{
+    font-size: 20px;
+    line-height: 4rem;
+}
+.fields{
+    display: block;
+    margin-bottom: 15px;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input-field{
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 30%;
+    height: 3.5rem;
+}
+.input-field input{
+    border: none;
+    background: none;
+    height: 3.4rem;
+    outline: none;
+    margin-left: 13px;
+}
+#age-input{
+    width: 8%;
+}
+#age{
+    text-align: center;
+    width: 70%;
+}
+#citizenship-input{
+    width: 17%;
+}
+#citizenship{
+    width: 80%;
+}
+input::placeholder{
+    font-family: "Poppins", sans-serif;
+}
+#address{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+}
+.input-field textarea{
+    height: 2rem;
+    outline: none;
+    margin-left: 13px;
+    width: 96%;
+    height: 94%;
+    resize: none;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+input[type = "date"]{
+    width: 90%;
+    background: url(images/date.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    font-family: "Poppins", sans-serif;
+}
+input[type = "date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+#buttons2{
+    margin-top: 10rem;
+}
+.button{
+    width: 20%;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #AC0000;
+    border: 1px solid #AC0000;
+    background: transparent;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.buttons span{
+    margin: auto;
+    padding-top: 2px;
+}
+.button:hover{
+    color: white;
+    background: #AC0000;
+}
+.form{
+    width: 100%;
+}
+.formcontainer{
+    position: relative;
+    margin-top: 16px;
+    height: 550px;
+    overflow: hidden;
+    border: 2px solid #00000080;
+    border-style: none none solid none;
+}
+.fileupload{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border: 2px solid #00000080;
+    border-style: solid none solid none;
+}
+.page{
+    position: absolute;
+    width: 100%;
+}
+#form-2{
+    left: 1050px;
+}
+#form-3{
+    left: 1050px;
+}
+#form-4{
+    left: 1050px;
+}
+.content{
+    width: 40%;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.upload-box{
+    margin-top: .5rem;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 50px;
+    width: 85%;
+    outline: none;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+}
+::-webkit-file-upload-button{
+    color: white;
+    background: #AC0000;
+    border: none;
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+}
+.radio-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.radio-group input[type="radio"]{
+    display: none;
+}
+.radio-group label{
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.radio-group label:hover{
+    opacity: 1;
+}
+.radio-group .tab {
+    order: 1;
+    display: none;
+}
+.radio-group input[type='radio']:checked + label + .tab{
+    display: block;
+}.radio-group input[type='radio']:checked + label{
+    display: block;
+    opacity: 1;
+    border-bottom: 5px solid #AC0000;
+    border-image: linear-gradient(to right, #AC0000  50%, transparent 50%) 100% 1;
+}
+.tab{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+input[type = "submit"]{
+    width: 30%;
+    height: 50px;
+    border: 1px solid #AC0000;
+    background: transparent;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #AC0000;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+}
+#submit:hover{
+    background: #AC0000;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Craft Gothics Light';
+    src: local('Craft Gothic Light'), local('Craft-Gothic-Light'),
+        url('fonts/CraftGothic-Light.woff2') format('woff2'),
+        url('fonts/CraftGothic-Light.woff') format('woff'),
+        url('fonts/CraftGothic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Craft Gothic';
+    src: local('Craft Gothic Regular'), local('Craft-Gothic-Regular'),
+        url('fonts/CraftGothic-Regular.woff2') format('woff2'),
+        url('fonts/CraftGothic-Regular.woff') format('woff'),
+        url('fonts/CraftGothic-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BITSUMIS';
+    src: local('BITSUMIS'), 
+        url('fonts/BITSUMIS.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+}
+
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	background-color: #333333;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	min-height: 10vh;
+}	
+
+.left-nav {
+	width: 75%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-bar {
+	width: 100%;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 1.2rem 2rem;
+}
+.menu {display: flex; }
+.menu li {padding-left: 3rem;}
+.menu li a {
+    text-decoration: none;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 5.5rem;
+    font-size: clamp(1rem, 1vw, 2.2rem);
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0 ;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 2rem;
+    right: 2rem;
+}
+#check {display: none;}
+
+.right-nav {
+	width: 25%;
+	max-width: 58rem;
+	padding-top: .5rem;
+	background-image: url('images/Products/nav-bg.svg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	padding-right: 1%;
+	z-index: 999;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.right-nav p{
+	font-family: 'BITSUMIS';
+	margin-right: 1rem;
+	color: white;
+	font-size: clamp(2.3rem, 1.5vw, 4.5rem);
+}
+
+
+.logo-img img {
+	margin-right: 1rem;
+	display: block;
+	width: 4rem;
+	
+}
+
+.search-logo {
+	margin-bottom: 1rem;
+	width: 4rem;
+}
+.search-container {
+	margin-right: 10%;
+	position: relative;
+}
+.search-bar {
+	margin: 9% 0;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 20px;
+	width: 12.5vw;
+	max-width: 24.5rem;
+	background-image: url('images/Products/search_icon.png');
+	background-repeat: no-repeat;
+    background-position: 21.5rem center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.search_bar.hidden {
+    display: none;
+}
+
+.search-bar::placeholder {
+    color: white;
+}
+
+#suggestions-list {
+  background-color: grey;
+  font-family: 'Poppins';
+  font-size: 1.5rem;
+  display: none;
+  background: #252222;
+  color: white;
+  position: absolute;
+  margin-top:0;
+  width: 100%;
+}
+
+#suggestions-list span {
+  display: block;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc; 
+}
+
+#suggestions-list span:last-child {
+  border-bottom: none;
+}
+
+#suggestions-list span:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.footer {
+	padding: 2% 4%;
+	background-color: #252222;
+	display: flex;
+	justify-content: center;
+}
+
+.section {
+	width: 170rem;
+	justify-content: space-between;
+	display: flex;
+}
+.section1 {
+	width: 22%;
+}
+
+.footer-logo {
+	width: 22rem;	
+	max-width:100%;
+}
+
+.section1 p {
+	font-family: 'Niramit';
+	color: white;
+	font-size: 1.9rem;
+	margin: 1% 0;
+}
+
+.section1 hr {
+	width: 22%;
+	margin: 0;
+}
+
+.social-links {
+	display:flex;
+	align-items: center;
+	margin-top:12%;
+	flex-wrap: wrap;
+}
+
+.social-links a {
+    margin-right: 4%;
+    width: 4rem;
+}
+
+.section2 {
+	width: 50%;
+	display: flex;
+	justify-content:space-between;
+}
+
+.footer-title {
+	font-family: 'Craft Gothic';
+	color: #FF3A3A;
+	font-size: 2.5rem;
+	margin: .5rem 0 1rem 0;
+}
+
+.red-line {
+	border-color:#FF3A3A;
+	width: 15%;
+	margin:0;
+}
+
+.quick-li {
+	width: 40%;
+}
+
+.quick-li ul {
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 0 0 1.2rem;
+}
+
+
+.quick-li li {
+	flex: 0 0 calc(50%);
+	list-style-image: url('images/Products/bullet.svg');
+	line-height: 4rem;
+	font-size: 1.8rem;
+}
+
+.quick-li li a:hover {
+	color: red;
+}
+
+.quick-li a {
+	font-family: 'Craft Gothics Light';
+	color: white;
+	text-decoration: none;
+}
+
+.contact-info {
+	width: 40%;
+}
+
+.infos {
+	display:flex;
+}
+
+.location-details {
+	font-family: 'Craft Gothics Light';
+	color: white;
+	font-size: 1.6rem;
+	margin-left: 7.4%;
+}
+
+.info-p {
+	font-family: 'Craft Gothics Light';
+	color: white;
+	margin-top: 3.8%;
+	font-size: 1.6rem;
+	margin-left: 6%;
+}
+
+.section3 {
+	width: 20%;
+}
+
+.section3 p {
+	font-family: 'Poppins';
+	color: white;
+	font-weight: 500;
+	font-size: 1.6rem;
+	margin: .5rem 0 2.5rem 0;
+}
+
+.call-box {
+	width: 26rem;	
+	max-width:100%;
+}
+
+.credit-cards {
+	margin-top: 2rem;
+}
+
+.credit-cards img {
+	width: 4.65rem;
+	margin-right: .5rem;
+}
+

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ordering/Application Form</title>
+        <link rel="stylesheet" href="application_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navigation" id="nav_foot">
+            <div class="left-nav">
+                <nav>
+                    <ul class='nav-bar'>
+                        <input type='checkbox' id='check' />
+                        <span class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="promos/promosPage.html">Promos</a></li>
+                            <li><a href="news-and-reviews.html">News and Reviews</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                        </span>
+                        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="right-nav">
+                <p> MITSUBISHI </p>
+                <div class="logo-img">
+                    <img src="images/logo.svg">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <form action="">
+                <div class="container">
+                    <div class="header">
+                        <img src="images/icon_VA.svg"><p>VEHICLE APPLICATION</p>
+                    </div>
+                    <div class="banks">
+                        <div class="unit">
+                            <div class="u_label"><p>Unit/Vehicle:</p></div>
+                            <div class="u_name"><p>chosen vehicle</p></div>
+                            <div class="u_change"><button type="button" onclick="">Change</button></div>
+                        </div>
+                        <div class="choosebank">
+                            <p>Choose Bank:</p>
+                            <div class="bankchoice">
+                                <input type="radio" name="bank" id="bank-1">
+                                <label class="bank bank-1" id="topbank" for='bank-1'><img src="images/bpi.svg"></label>
+                                <input type="radio" name="bank" id="bank-2">
+                                <label class="bank bank-2" id="topbank" for='bank-2'><img src="images/maybank.svg"></label>
+                                <input type="radio" name="bank" id="bank-3">
+                                <label class="bank bank-3" id="topbank" for='bank-3'><img src="images/rcbc.svg"></label>
+                                <input type="radio" name="bank" id="bank-4">
+                                <label class="bank bank-4" for='bank-4'><img src="images/securitybank.svg"></label>
+                                <input type="radio" name="bank" id="bank-5">
+                                <label class="bank bank-5" for='bank-5'><img src="images/psbank.svg"></label>
+                                <input type="radio" name="bank" id="bank-6">
+                                <label class="bank bank-6" for='bank-6'><img src="images/eastwest.svg"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="application_form">
+                        <div class="consent">
+                            <h1>Application Form</h1>
+                            <p>I hereby authorize Union Motor Corporation (Authorized dealer of Mitsubishi Motors Philippines) 
+                                to process and share my personal data to any of it’s accredited banks for the purpose of financing 
+                                my purchase of auto vehicle from the dealer. I am also aware that the details of how my personal data 
+                                will be processed</p>
+                            <div class="check">
+                                <input type="checkbox" class="checkbox-field" id="agree">
+                                <label for="agree" class="checkbox-label">Agree</label>
+                            </div>
+                        </div>
+                        <div class="formcontainer">
+                            <div action="" id="form-1" class="page">
+                                <div class="form first">
+                                    <header>Primary Borrower Information</header>
+                                    <div class="detailspersonal">
+                                        <span class="title">Personal Details</span>
+                                        <div class="fields">
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Full Name">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Middle Name">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="date" placeholder="MM/DD/YYYY">
+                                                    </div>
+                                                    <div class="input-field" id="age-input">
+                                                        <input type="number" placeholder="Age" id="age">
+                                                    </div>
+                                                    <div class="input-field" id="citizenship-input">
+                                                        <input type="text" placeholder="Citizenship" id="citizenship">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Civil Status">
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        <span class="title">Address Details</span>
+                                        <div class="fields">
+                                                <div class="line">
+                                                    <div class="input-field" id="address">
+                                                        <textarea placeholder="Address"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Length of Stay">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="tel" placeholder="Telephone no.">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="number" placeholder="Mobile no.">
+                                                    </div>
+                                                </div>  
+                                        </div>
+                                        <div class="buttons">
+                                            <button type="button" id="Next1" class="button">
+                                                <span>NEXT</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div action="" id="form-2" class="page">
+                                <div class="form second">
+                                    <header>Primary Borrower Information</header>
+                                    <div class="detailspersonal">
+                                        <span class="title">Employment/Business Details</span>
+                                        <div class="fields">
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Employment/Business">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Position">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="tel" placeholder="Office Telephone no.">
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="input-field" id="address">
+                                                        <textarea placeholder="Business Address"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Employment Duration">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Salary">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Tin no.">
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="SSS/GSIS">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="email" placeholder="Email Address">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Bank">
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        <div class="buttons" id="buttons2">
+                                            <button type="button" id="Back1" class="button">
+                                                <span>BACK</span>
+                                            </button>
+                                            <button type="button" id="Next2" class="button">
+                                                <span>NEXT</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div action="" id="form-3" class="page">
+                                <div class="form second">
+                                    <header>Secondary Borrower Information</header>
+                                    <div class="detailspersonal">
+                                        <span class="title">Personal Details</span>
+                                        <div class="fields">
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Full Name">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Middle Name">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="date" placeholder="MM/DD/YYYY">
+                                                    </div>
+                                                    <div class="input-field" id="age-input">
+                                                        <input type="number" placeholder="Age" id="age">
+                                                    </div>
+                                                    <div class="input-field" id="citizenship-input">
+                                                        <input type="text" placeholder="Citizenship" id="citizenship">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Civil Status">
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        <span class="title">Address Details</span>
+                                        <div class="fields">
+                                                <div class="line">
+                                                    <div class="input-field" id="address">
+                                                        <textarea placeholder="Address"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="line">
+                                                    <div class="input-field">
+                                                        <input type="text" placeholder="Length of Stay">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="tel" placeholder="Telephone no.">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="number" placeholder="Mobile no.">
+                                                    </div>
+                                                </div>  
+                                        </div>
+                                        <div class="buttons">
+                                            <button type="button" id="Back2" class="button">
+                                                <span>BACK</span>
+                                            </button>
+                                            <button type="button" id="Next3" class="button">
+                                                <span>NEXT</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div action="" id="form-4" class="page">
+                                <div class="form second">
+                                    <header>Secondary Borrower Information</header>
+                                    <div class="detailspersonal">
+                                        <span class="title">Employment/Business Details</span>
+                                        <div class="fields">
+                                            <div class="line">
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="Employment/Business">
+                                                </div>
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="Position">
+                                                </div>
+                                                <div class="input-field">
+                                                    <input type="tel" placeholder="Office Telephone no.">
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="input-field" id="address">
+                                                    <textarea placeholder="Business Address"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="Employment Duration">
+                                                </div>
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="Salary">
+                                                </div>
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="Tin no.">
+                                                </div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="SSS/GSIS">
+                                                </div>
+                                                <div class="input-field">
+                                                    <input type="email" placeholder="Email Address">
+                                                </div>
+                                                <div class="input-field">
+                                                    <input type="text" placeholder="Bank">
+                                                </div>
+                                            </div>
+                                    </div>
+                                        <div class="buttons" id="buttons2">
+                                            <button type="button" id="Back3" class="button">
+                                                <span>BACK</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fileupload">
+                            <header>File Requirements</header>
+                            <div class="radio-group">
+                                <input type="radio" name="radio-group" id="radio1" checked="checked">
+                                <label for="radio1" class="req1">Employee</label>
+                                <div class="tab">
+                                    <div class="box">
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>COE/Payslips for the last 3 months (with salary, allowance or commission)</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Valid ID/s (ex. TIN ID), Company ID, and Proof of Billing</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Co-borrower requirements: 2 Valid IDs</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <input type="radio" name="radio-group" id="radio2">
+                                <label for="radio2" class="req2">Government</label>
+                                <div class="tab">
+                                    <div class="box">
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>COE/Payslips for the last 3 months (with salary, allowance or commission)</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Valid ID/s (ex. TIN ID), Company ID, and Proof of Billing</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Co-borrower requirements: 2 Valid IDs</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <input type="radio" name="radio-group" id="radio3">
+                                <label for="radio3" class="req3">Seaman</label>
+                                <div class="tab">
+                                    <div class="box">
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Seaman Booklet, Passport ID, and Latest Contact</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Proof of Remittance or Allotment</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Primary Borrower (Wife or Parents): 2 Valid IDs and Passbook</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <input type="radio" name="radio-group" id="radio4">
+                                <label for="radio4" class="req4">OFW</label>
+                                <div class="tab">
+                                    <div class="box">
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>2 Valid IDs, Proof of Billing, Contract, and POEA</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Bank Statement</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Primary Borrower: 2 Valid IDs, Proof of Remittance, Passbook</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <input type="radio" name="radio-group" id="radio5">
+                                <label for="radio5" class="req5">Business</label>
+                                <div class="tab">
+                                    <div class="box">
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Bank Statement (Passbook or last 3 months record)</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>DTI Permit or Mayor's Permit, Valid IDs (ex. TIN ID), Driver License, Proof of Billing, and ITR with AFS</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="uploads">
+                                                <p>Co-borrower: 2 Valid IDs</p>
+                                                <div class="up-container">
+                                                    <input type="file" class="upload-box">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Submit Application" id="submit">
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <div class="footer" id="nav_foot">
+            <div class="section">
+              <div class="section1">
+                <img class="footer-logo" src="images/logo-footer.svg">
+                <p>DRIVE YOUR AMBITION</p>
+                <br>
+                <hr>
+                <div class="social-links">
+                  <a href = "https://www.instagram.com/mitsubishi.ryanbarreto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                  <img src="images/ig-logo.svg"> </a>
+                  <a href = "https://x.com/JhonRyanBarret1?s=20">
+                  <img src="images/twitter-logo.svg"></a>
+                  <a href = "https://www.facebook.com/mitsubishimanilaph">
+                  <img src="images/fb-logo.svg"></a>
+                  <a href = "https://www.google.com/search?q=Mitsubishi+Otis+Paco+Manila">
+                  <img src="images/google-logo.svg"></a>	
+                </div>
+              </div>
+          
+              <div class="section2">
+                <div class="quick-li">
+                  <p class="footer-title">Quick Links</p>
+                  <hr class="red-line">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news-and-reviews.html">News & Reviews</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="promos/promosPage.html">Promos</a></li>
+                  </ul>
+                </div>
+          
+                <div class="contact-info">
+                  <p class="footer-title">Contact</p>
+                  <hr class="red-line">
+                  <div class="infos">
+                    <img src="images/loc-logo.svg">
+                    <p class="location-details">Mitsubishi Paco Manila</p>
+                  </div>
+                  <div class="infos">
+                    <img src="images/email-logo.svg">
+                    <p class="info-p">ryan.mitsubishi@gmail.com</p>
+                  </div>
+                  <div class="infos">
+                    <img src="images/landline-logo.svg">
+                    <p class="info-p">63-977 707 3312</p>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="section3">
+                <p>Contact us by:</p>
+                <img class="call-box" src="images/contact-no.svg">
+                <div class="credit-cards">
+                  <img src="images/card1.svg">
+                  <img src="images/card2.svg">
+                  <img src="images/card3.svg">
+                  <img src="images/card4.svg">
+                  <img src="images/card5.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        <script>
+            var Form1 = document.getElementById("form-1");
+            var Form2 = document.getElementById("form-2");
+            var Form3 = document.getElementById("form-3");
+            var Form4 = document.getElementById("form-4");
+
+            var Next1 = document.getElementById("Next1");
+            var Next2 = document.getElementById("Next2");
+            var Next3 = document.getElementById("Next3");
+            var Back1 = document.getElementById("Back1");
+            var Back2 = document.getElementById("Back2");
+            var Back3 = document.getElementById("Back3");
+
+            Next1.onclick = function(){
+                Form1.style.left = "-1050px";
+                Form2.style.left = "0px";
+            }
+            Back1.onclick = function(){
+                Form1.style.left = "0px";
+                Form2.style.left = "1050px";
+            }
+            Next2.onclick = function(){
+                Form2.style.left = "-1050px";
+                Form3.style.left = "0px";
+            }
+            Back2.onclick = function(){
+                Form2.style.left = "1px";
+                Form3.style.left = "1050px";
+            }
+            Next3.onclick = function(){
+                Form3.style.left = "-1050px";
+                Form4.style.left = "0px";
+            }
+            Back3.onclick = function(){
+                Form3.style.left = "1px";
+                Form4.style.left = "1050px";
+            }
+        </script>
+    </body>
+</html>

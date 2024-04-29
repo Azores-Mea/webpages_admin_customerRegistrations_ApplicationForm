@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Registration</title>
+        <link rel="stylesheet" href="admin_reg_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="logo"><img src="images/adm_logo.svg"></div>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">PROMOS</a></li>
+                        <li><a href="">NEWS & REVIEWS</a></li>
+                    </ul>
+                </div>
+                <div class="signin_up">
+                    <a href="" class="signin">SIGN IN</a>
+                    <a href="" class="signup">SIGN UP</a>
+                </div>
+            </div>
+            <div class="form">
+                <form onsubmit="return passverify()">
+                    <div class="header">
+                        <img src="images/admin_reg_logo.svg"> <h1>Admin Registration</h1>
+                    </div>
+                    
+                    <h2>DISCLAIMER: Admin registration requires approval from an admin. 
+                        Thorough verification is necessary to ensure the protection of 
+                        sensitive informations and admin can access. During the verification 
+                        process, please do wait patiently.</h2>
+
+                    <div class="inputs">
+                        <div class="input_box2">
+                            <div class="input_field">
+                                <img src="images/email.svg">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <div class="input_field">
+                                <img src="images/User.svg">
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="input_field">
+                                <img src="images/User.svg">
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="input_box2">
+                            <div class="input_field">
+                                <img src="images/@.svg">
+                                <input type="text" placeholder="Username" maxlength="20" required>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <div class="input_field">
+                                <img src="images/pass_logo.svg">
+                                <input type="password" placeholder="Password" class="password" id="password" required>
+                            </div>
+                            <div class="input_field">
+                                <img src="images/pass_logo.svg">
+                                <input type="password" placeholder="Confirm Password" class="confirm" id="confirm" required>
+                                
+                            </div>
+                        </div>
+                        <div class="confirmmess">
+                            <span id="messages"></span>
+                        </div>
+                    </div>
+
+                    <div class="register_b">
+                        <input type="submit" value="Sign Up" style="cursor:pointer;" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function passverify(){
+                var a = document.getElementById("password").value;
+                var b = document.getElementById("confirm").value;
+
+                if(a!=b){
+                    document.getElementById("messages").innerHTML='<span id="messages"><img src="images/warning.svg">Passwords do not match! Please try again.</span>';
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
