@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Manage Accounts</title>
+        <link rel="stylesheet" type="text/css" href="style_manage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form action="">
+
+            <div class="m_wrapper">
+                <div class="right">
+                    <img src="images/mitsubishlogo.svg">
+                    <div class="menu">
+                        <h1>Menu</h1>
+                        <a href=""><p><img src="images/dash_icon.svg">Dashboard</p></a>
+                        <a href=""><p><img src="images/transaction_icon.svg">Transaction</p></a>
+                        <a href=""><p id="active_right"><img src="images/members_icon.svg">Members</p></a>
+                    </div>
+                    <div class="menu logout">
+                        <a href=""><p><img src="images/logout.svg">Log Out</p></a>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="top">
+                        <div class="message"><h1>Welcome Back,<b>&nbsp;Ryan!</b></h1>
+                        <p>Effortlessly manage website with admin panel.</p></div>
+                        <div class="profile">
+                            <p><b>Ryan Barreto</b><br>ryanbarreto@gmail.com</p>
+                            <div class="img1"><img src="images/adminprofile.svg"></div>
+                            <div class="img2"><img src="images/icon.svg"></div>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <div class="b_top">
+                            <div class="manage">
+                                <img src="images/manage_acc.svg">
+                                <div class="manage_acc">
+                                    <p><b>Manage Accounts</b> <br> Members (6)</p>
+                                </div>
+                                <a href="#" class="add">Add member</a>
+                                <a href="#" class="edit" id="buttonn">Edit Roles</a>
+                            </div>
+                            <div class="category">
+                                <div class="radio-group">
+                                    <input type="radio" name="radio-group" id="radio1" checked="checked">
+                                    <label for="radio1" class="cat">All</label>
+                                    <div class="tab">
+                                        <div class="filter">
+                                            <div class="fil_search"><img src="images/search.svg"><input type="text" placeholder="Search"></div>
+                                            <div class="fil_roles">
+                                                <select name="role" id="role" >
+                                                    <option value="" disable selected hidden>Roles</option>
+                                                    <option value="Webmaster">Webmaster</option>
+                                                    <option value="Scheduler">Scheduler</option>
+                                                    <option value="Customer">Customer</option>
+                                                </select>
+                                            </div>
+                                            <div class="sort">
+                                                <select name="sort">
+                                                    <option value="">Sort by Account</option>
+                                                    <option value="">Sort by Date Created</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="accounts">
+                                            <div class="labels_acc">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="acc">Account</div>
+                                                <div class="created">Account Created</div>
+                                                <div class="roless">Role</div>
+                                                <div class="remove_acc"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="user accs">
+                                                    <img src="images/user_icon.svg"><p><h3>Username/FullName</h3><h4>username1@gmail.com</h4></p>
+                                                </div>
+                                                <div class="date_created">2021.06.24 <img src="images/x_icon.svg" class="img_1"><img src="images/date_icon.svg" class="img_2"></div>
+                                                <div class="roles">
+                                                    <select name="role" id="role">
+                                                        <option value="Webmaster" selected="selected">Webmaster</option>
+                                                        <option value="Scheduler">Scheduler</option>
+                                                        <option value="Customer">Customer</option>
+                                                    </select>
+                                                </div>
+                                                <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="user accs">
+                                                    <img src="images/user_icon.svg"><p><h3>Username/FullName</h3><h4>username1@gmail.com</h4></p>
+                                                </div>
+                                                <div class="date_created">2021.06.24 <img src="images/x_icon.svg" class="img_1"><img src="images/date_icon.svg" class="img_2"></div>
+                                                <div class="roles">
+                                                    <select name="role" id="role">
+                                                        <option value="Webmaster">Webmaster</option>
+                                                        <option value="Scheduler"selected="selected">Scheduler</option>
+                                                        <option value="Customer">Customer</option>
+                                                    </select>
+                                                </div>
+                                                <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="user accs">
+                                                    <img src="images/user_icon.svg"><p><h3>Username/FullName</h3><h4>username1@gmail.com</h4></p>
+                                                </div>
+                                                <div class="date_created">2021.06.24 <img src="images/x_icon.svg" class="img_1"><img src="images/date_icon.svg" class="img_2"></div>
+                                                <div class="roles">
+                                                    <select name="role" id="role">
+                                                        <option value="Webmaster">Webmaster</option>
+                                                        <option value="Scheduler">Scheduler</option>
+                                                        <option value="Customer" selected="selected">Customer</option>
+                                                    </select>
+                                                </div>
+                                                <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="radio" name="radio-group" id="radio2">
+                                    <label for="radio2" class="cat">Customer</label>
+                                    <div class="tab">
+                                        <div class="filter">
+                                            <div class="fil_search"><img src="images/search.svg"><input type="text" placeholder="Search"></div>
+                                            <div class="fil_roles">
+                                                <select name="role" id="role" >
+                                                    <option value="" disable selected hidden>Roles</option>
+                                                    <option value="Webmaster">Webmaster</option>
+                                                    <option value="Scheduler">Scheduler</option>
+                                                    <option value="Customer">Customer</option>
+                                                </select>
+                                            </div>
+                                            <div class="sort">
+                                                <select name="sort">
+                                                    <option value="">Sort by Account</option>
+                                                    <option value="">Sort by Date Created</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="accounts">
+                                            <div class="labels_acc">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="acc">Account</div>
+                                                <div class="created">Account Created</div>
+                                                <div class="roless">Role</div>
+                                                <div class="remove_acc"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="user accs">
+                                                    <img src="images/user_icon.svg"><p><h3>Username/FullName</h3><h4>username1@gmail.com</h4></p>
+                                                </div>
+                                                <div class="date_created">2021.06.24 <img src="images/x_icon.svg" class="img_1"><img src="images/date_icon.svg" class="img_2"></div>
+                                                <div class="roles">
+                                                    <select name="role" id="role">
+                                                        <option value="Webmaster">Webmaster</option>
+                                                        <option value="Scheduler">Scheduler</option>
+                                                        <option value="Customer"selected="selected">Customer</option>
+                                                    </select>
+                                                </div>
+                                                <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="radio" name="radio-group" id="radio3">
+                                    <label for="radio3" class="cat">Scheduler</label>
+                                    <div class="tab">
+                                        <div class="filter">
+                                            <div class="fil_search"><img src="images/search.svg"><input type="text" placeholder="Search"></div>
+                                            <div class="fil_roles">
+                                                <select name="role" id="role" >
+                                                    <option value="" disable selected hidden>Roles</option>
+                                                    <option value="Webmaster">Webmaster</option>
+                                                    <option value="Scheduler">Scheduler</option>
+                                                    <option value="Customer">Customer</option>
+                                                </select>
+                                            </div>
+                                            <div class="sort">
+                                                <select name="sort">
+                                                    <option value="">Sort by Account</option>
+                                                    <option value="">Sort by Date Created</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="accounts">
+                                            <div class="labels_acc">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="acc">Account</div>
+                                                <div class="created">Account Created</div>
+                                                <div class="roless">Role</div>
+                                                <div class="remove_acc"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="user accs">
+                                                    <img src="images/user_icon.svg"><p><h3>Username/FullName</h3><h4>username1@gmail.com</h4></p>
+                                                </div>
+                                                <div class="date_created">2021.06.24 <img src="images/x_icon.svg" class="img_1"><img src="images/date_icon.svg" class="img_2"></div>
+                                                <div class="roles">
+                                                    <select name="role" id="role">
+                                                        <option value="Webmaster">Webmaster</option>
+                                                        <option value="Scheduler" selected="selected">Scheduler</option>
+                                                        <option value="Customer">Customer</option>
+                                                    </select>
+                                                </div>
+                                                <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="radio" name="radio-group" id="radio4">
+                                    <label for="radio4" class="cat">Webmaster</label>
+                                    <div class="tab">
+                                        <div class="filter">
+                                            <div class="fil_search"><img src="images/search.svg"><input type="text" placeholder="Search"></div>
+                                            <div class="fil_roles">
+                                                <select name="role" id="role" >
+                                                    <option value="" disable selected hidden>Roles</option>
+                                                    <option value="Webmaster">Webmaster</option>
+                                                    <option value="Scheduler">Scheduler</option>
+                                                    <option value="Customer">Customer</option>
+                                                </select>
+                                            </div>
+                                            <div class="sort">
+                                                <select name="sort">
+                                                    <option value="">Sort by Account</option>
+                                                    <option value="">Sort by Date Created</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="accounts">
+                                            <div class="labels_acc">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="acc">Account</div>
+                                                <div class="created">Account Created</div>
+                                                <div class="roless">Role</div>
+                                                <div class="remove_acc"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="check">
+                                                </div>
+                                                <div class="user accs">
+                                                    <img src="images/user_icon.svg"><p><h3>Username/FullName</h3><h4>username1@gmail.com</h4></p>
+                                                </div>
+                                                <div class="date_created">2021.06.24 <img src="images/x_icon.svg" class="img_1"><img src="images/date_icon.svg" class="img_2"></div>
+                                                <div class="roles">
+                                                    <select name="role" id="role">
+                                                        <option value="Webmaster" selected="selected">Webmaster</option>
+                                                        <option value="Scheduler">Scheduler</option>
+                                                        <option value="Customer">Customer</option>
+                                                    </select>
+                                                </div>
+                                                <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="popup">
+                            <div class="popup_content">
+                                <div class="close"><img src="images/x_icon.svg"></div>
+                                <div class="header"><img src="images/manage_acc.svg"><p>Manage Accounts</p></div>
+                                <div class="label"><div class="text1">User</div><div class="email"></div><div class="text2">Roles</div></div>
+                                <div class="item">
+                                    <div class="user">
+                                        <p><img src="images/user_icon.svg">Username/FullName</p>
+                                    </div>
+                                    <div class="u_mail"><p>username1@gmail.com</p></div>
+                                    <div class="roles">
+                                        <select name="role" id="role">
+                                            <option value="Webmaster" selected="selected">Webmaster</option>
+                                            <option value="Scheduler">Scheduler</option>
+                                            <option value="Customer">Customer</option>
+                                        </select>
+                                    </div>
+                                    <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                </div>
+                                <div class="item">
+                                    <div class="user">
+                                        <p><img src="images/user_icon.svg">Username/FullName</p>
+                                    </div>
+                                    <div class="u_mail"><p>username1@gmail.com</p></div>
+                                    <div class="roles">
+                                        <select name="role" id="role">
+                                            <option value="Webmaster">Webmaster</option>
+                                            <option value="Scheduler" selected="selected">Scheduler</option>
+                                            <option value="Customer">Customer</option>
+                                        </select>
+                                    </div>
+                                    <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                </div>
+                                <div class="item">
+                                    <div class="user">
+                                        <p><img src="images/user_icon.svg">Username/FullName</p>
+                                    </div>
+                                    <div class="u_mail"><p>username1@gmail.com</p></div>
+                                    <div class="roles">
+                                        <select name="role" id="role">
+                                            <option value="Webmaster">Webmaster</option>
+                                            <option value="Scheduler">Scheduler</option>
+                                            <option value="Customer" selected="selected">Customer</option>
+                                        </select>
+                                    </div>
+                                    <div class="remove"><button><p>Remove</p><img src="images/Remove_icon.svg"></button></div>
+                                </div>
+                                <input type="submit" value="Save" class="save">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+        <script>document.getElementById("buttonn").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex";
+        })
+            document.querySelector(".close").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none"
+        })
+            document.querySelector(".save").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none"
+        })
+
+        const btns = document.querySelectorAll(".btnnn");
+        const storeItems = document.querySelectorAll(".item");
+
+        for (i = 0; i < btnnn.length; i++){
+            btnnn[i].addEventListener("click", (e) => {
+                e.preventDefault();
+
+                const filter = e.target.dataset.filter;
+                storeItems.forEach((item) => {
+                    if(filter == "all") {
+                        item.style.display = "flex"
+                    }else {
+                        if(item.classList.contains(filter)){
+                            item.style.display = "flex"
+                        } else {
+                            item.style.diplay = "none"
+                        }
+                    }
+                })
+            })
+        }
+        </script>
+    </body>
+
+</html>
